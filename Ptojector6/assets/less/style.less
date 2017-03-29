@@ -1,0 +1,49 @@
+@import "mixins.less";
+
+
+
+// text colors
+@darktext: #fF0000;
+@lighttext: #00ff00;
+@links: #0000ff;
+
+//margins
+@margintop:10px;
+@marginbottom:20px;
+
+//mixins
+.flex(@ai,@jc){
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: @ai;
+  justify-content: @jc;
+}
+.margin(@pxg, @pxv){
+  margin:@pxv @pxg;
+}
+.button(@wh,@c){
+  color: @c;
+  height: @wh;
+  width: @wh;
+}
+
+//header
+.header{
+  width: 1024px;
+  margin: 0 auto;
+  .flex(center,space-between);
+  img{
+    margin-top: 10px;
+    display: block;
+    .margin(20px, 10px);
+  }
+  ul{
+    >li.active{
+      >p{
+        color:@darktext;
+        margin-top:@margintop*3;
+      }
+    }
+  }
+}

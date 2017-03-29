@@ -1,0 +1,18 @@
+.header {
+  width: 1024px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header img {
+  margin-top: 10px;
+  display: block;
+  margin: 10px 20px;
+}
+.header ul > li.active > p {
+  color: #ff0000;
+  margin-top: 30px;
+}
